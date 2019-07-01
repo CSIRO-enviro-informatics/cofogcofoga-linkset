@@ -572,7 +572,7 @@
     skos:broader :085 ;
     skos:inScheme <http://linked.data.gov.au/def/cofog-a> ;
     skos:notation "0851" ;
-    skos:prefLabel "Research and development - recreation, culture and religion"@en .
+    skos:prefLabel "Research and development - recreation, Culture and Religion"@en .
 
 :0891 a skos:Concept ;
     skos:broader :089 ;
@@ -1016,7 +1016,7 @@
     skos:broader :08 ;
     skos:inScheme <http://linked.data.gov.au/def/cofog-a> ;
     skos:notation "085" ;
-    skos:prefLabel "Research and development - recreation, culture and religion"@en .
+    skos:prefLabel "Research and development - recreation, Culture and Religion"@en .
 
 :096 a skos:Concept ;
     skos:broader :09 ;
@@ -1172,7 +1172,7 @@
     skos:broader :08 ;
     skos:inScheme <http://linked.data.gov.au/def/cofog-a> ;
     skos:notation "089" ;
-    skos:prefLabel "Recreation, culture and religion not elsewhere classified"@en .
+    skos:prefLabel "Recreation, Culture and Religion not elsewhere classified"@en .
 
 :092 a skos:Concept ;
     skos:broader :09 ;

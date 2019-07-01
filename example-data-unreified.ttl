@@ -1,0 +1,7 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://linked.data.gov.au/def/cofog-a/01> skos:exactMatch <http://linked.data.gov.au/def/cofog/01> .
+<http://linked.data.gov.au/def/cofog-a/0111> skos:exactMatch <http://linked.data.gov.au/def/cofog/0111> .
+<http://linked.data.gov.au/def/cofog-a/0112> skos:exactMatch <http://linked.data.gov.au/def/cofog/0112> .
+<http://linked.data.gov.au/def/cofog-a/11> skos:narrowerMatch <http://linked.data.gov.au/def/cofog/0454> .
+<http://linked.data.gov.au/def/cofog-a/11> skos:narrowerMatch <http://linked.data.gov.au/def/cofog/0485> .
