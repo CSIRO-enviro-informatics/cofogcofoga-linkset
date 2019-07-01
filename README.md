@@ -1,7 +1,7 @@
 # COFOG / COFOG-A Linkset
 This code repository contains a Linkset - a specialised Dataset linking objects in two other Datasets.
 
-This Linkset contains [SKOS mapping properties](https://www.w3.org/TR/skos-reference/#mapping) between Concepts in the [COFOG](http://data.naa.gov.au/def/cofog) and Concepts in the [COFOG-A](http://data.naa.gov.au/def/cofog) vocabularies.
+This Linkset contains [SKOS mapping properties](https://www.w3.org/TR/skos-reference/#mapping) between Concepts in the [COFOG](http://linked.data.gov.au/def/cofog) and Concepts in the [COFOG-A](http://linked.data.gov.au/def/cofog) vocabularies.
 
 COFOG, "Classification of the Functions of Government", is a [United Nations Statistics Division](https://unstats.un.org/unsd/iiss/Classification-of-the-Functions-of-Government-COFOG.ashx)-issued vocabulary used to "...distinguish between the individual and collective services provided by general government and identifies consumption expenditures that benefit individual households...".
 
