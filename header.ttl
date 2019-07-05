@@ -1,8 +1,6 @@
-@prefix : <http://linked.data.gov.au/dataset/cofogcofoga/> .
-@prefix cofog: <http://linked.data.gov.au/def/cofog/> .
-@prefix cofoga: <http://linked.data.gov.au/def/cofoga/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix loci: <http://linked.data.gov.au/def/loci#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -10,6 +8,13 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+@prefix : <http://linked.data.gov.au/dataset/cofogcofoga/> .
+@prefix method: <http://linked.data.gov.au/linkset/cofogcofoga/method> .
+@prefix nick: <http://linked.data.gov.au/linkset/cofogcofoga/nick> .
+
+@prefix cofog: <http://linked.data.gov.au/def/cofog/> .
+@prefix cofoga: <http://linked.data.gov.au/def/cofoga/> .
 
 
 <http://linked.data.gov.au/dataset/cofogcofoga>
@@ -33,15 +38,16 @@ The COFOG-A is an Australian version of COFOG issued by the from the [Australian
     loci:hadGenerationMethod :method .
 
 
-:method a prov:Plan ;
+method: a prov:Plan ;
     rdfs:label "Python and Excel processing" ;
-    rdfs:seeAlso <https://github.com/CSIRO-enviro-informatics/cofogcofoga-linkset/method> ;
+    rdfs:seeAlso <https://github.com/CSIRO-enviro-informatics/agiftcofoga-linkset/method> ;
     rdfs:comment "The method used to create this linkset, described in the code repository housing the Linkset data" ;
     prov:wasAttributedTo :nick ;
     prov:generatedAtTime "2019-07-01"^^xsd:date .
 
 
-:nick
+nick:
+    a owl:NamedIndividual , sdo:Person ;
     sdo:email "nicholas.car@csiro.au" ;
     sdo:identifier <http://orcid.org/0000-0002-8742-7730> ;
     sdo:memberOf [
@@ -50,3 +56,4 @@ The COFOG-A is an Australian version of COFOG issued by the from the [Australian
     ] ;
     sdo:name "Nicholas J. Car" .
 
+    
