@@ -29,14 +29,14 @@ The COFOG-A is an Australian version of COFOG issued by the from the [Australian
         sdo:identifier <http://catalogue.linked.data.gov.au/org/abs> ;
         sdo:name "Australian Bureau of Statistics"
     ] ;
-    dct:creator :nick ;
+    dct:creator nick: ;
     dct:created "2019-07-01"^^xsd:date ;
     # dct:issued ""^^xsd:date ; # not given yet
     # dct:modified ""^^xsd:date ; # not given yet
     void:subjectsTarget <https://data.naa.gov.au/def/cofog-a> ;
     void:linkPredicate skos:broadMatch , skos:closeMatch , skos:exactMatch , skos:narrowMatch , skos:relatedMatch ;
     void:objectsTarget <http://linked.data.gov.au/def/cofog> ;
-    loci:hadGenerationMethod :method .
+    loci:hadGenerationMethod method: .
 
 
 method: a prov:Plan ;
@@ -57,4 +57,3 @@ nick:
     ] ;
     sdo:name "Nicholas J. Car" .
 
-    
