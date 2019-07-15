@@ -1,0 +1,1408 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix loci: <http://linked.data.gov.au/def/loci#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sdo: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+@prefix : <http://linked.data.gov.au/dataset/cofogcofoga/> .
+@prefix method: <http://linked.data.gov.au/dataset/cofogcofoga/method> .
+@prefix nick: <http://linked.data.gov.au/dataset/cofogcofoga/nick> .
+
+@prefix cofog: <http://linked.data.gov.au/def/cofog/> .
+@prefix cofoga: <http://linked.data.gov.au/def/cofog-a/> .
+
+
+<http://linked.data.gov.au/dataset/cofogcofoga>
+    a loci:Linkset ;
+    dct:title "COFOG / COROG-A Linkset" ;
+    dct:description """This Linkset contains [SKOS mapping properties](https://www.w3.org/TR/skos-reference/#mapping) between Concepts in the [COFOG](http://data.naa.gov.au/def/cofog) and Concepts in the [COFOG-A](http://data.naa.gov.au/def/cofog) vocabularies.
+
+COFOG, "Classification of the Functions of Government", is a [United Nations Statistics Division](https://unstats.un.org/unsd/iiss/Classification-of-the-Functions-of-Government-COFOG.ashx)-issued vocabulary used to "...distinguish between the individual and collective services provided by general government and identifies consumption expenditures that benefit individual households...".
+
+The COFOG-A is an Australian version of COFOG issued by the from the [Australian Bureau of Statistics](http://www.abs.gov.au) in the [Australian System of Government Finance Statistics: Concepts, Sources and Methods](http://www.ausstats.abs.gov.au/ausstats/subscriber.nsf/0/418BDDEBD088A012CA257F230019D433/$File/55140_2015.pdf) which is represented as a SKOS vocabulary online at <http://linked.data.gov.au/def/cofog-a>."""@en ;
+    dct:publisher [
+        sdo:identifier <http://catalogue.linked.data.gov.au/org/abs> ;
+        sdo:name "Australian Bureau of Statistics"
+    ] ;
+    dct:creator nick: ;
+    dct:created "2019-07-01"^^xsd:date ;
+    # dct:issued ""^^xsd:date ; # not given yet
+    # dct:modified ""^^xsd:date ; # not given yet
+    void:subjectsTarget <http://linked.data.gov.au/def/cofog> ;
+    void:linkPredicate skos:broadMatch , skos:closeMatch , skos:exactMatch , skos:narrowMatch , skos:relatedMatch ;
+    void:objectsTarget <http://linked.data.gov.au/def/cofog-a> ;
+    loci:hadGenerationMethod method: .
+
+
+method: a prov:Plan ;
+    rdfs:label "Python and Excel processing" ;
+    rdfs:seeAlso <https://github.com/CSIRO-enviro-informatics/agiftcofoga-linkset/method> ;
+    rdfs:comment "The method used to create this linkset, described in the code repository housing the Linkset data" ;
+    prov:wasAttributedTo :nick ;
+    prov:generatedAtTime "2019-07-01"^^xsd:date .
+
+
+nick:
+    a owl:NamedIndividual , sdo:Person ;
+    sdo:email "nicholas.car@csiro.au" ;
+    sdo:identifier <http://orcid.org/0000-0002-8742-7730> ;
+    sdo:memberOf [
+        sdo:identifier <http://catalogue.linked.data.gov.au/org/csiro> ;
+        sdo:name "CSIRO"
+    ] ;
+    sdo:name "Nicholas J. Car" .
+
+:s001
+    a rdf:Statement ;
+    rdf:subject cofoga:076 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:074 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s002
+    a rdf:Statement ;
+    rdf:subject cofoga:043 ;
+    rdf:predicate skos:narrowerMatch ;
+    rdf:object cofog:0483 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s003
+    a rdf:Statement ;
+    rdf:subject cofoga:051 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:051 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s004
+    a rdf:Statement ;
+    rdf:subject cofoga:05 ;
+    rdf:predicate skos:narrowerMatch ;
+    rdf:object cofog:055 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s005
+    a rdf:Statement ;
+    rdf:subject cofoga:0464 ;
+    rdf:predicate skos:exactMAtch ;
+    rdf:object cofog:0474 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s006
+    a rdf:Statement ;
+    rdf:subject cofoga:101 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:102 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s007
+    a rdf:Statement ;
+    rdf:subject cofoga:117 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0455 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s008
+    a rdf:Statement ;
+    rdf:subject cofoga:0712 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0712 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s009
+    a rdf:Statement ;
+    rdf:subject cofoga:07 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:07 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s010
+    a rdf:Statement ;
+    rdf:subject cofoga:092 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:092 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s011
+    a rdf:Statement ;
+    rdf:subject cofoga:0331 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0330 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s012
+    a rdf:Statement ;
+    rdf:subject cofoga:11 ;
+    rdf:predicate skos:narrowerMatch ;
+    rdf:object cofog:0485 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s013
+    a rdf:Statement ;
+    rdf:subject cofoga:044 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:044 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s014
+    a rdf:Statement ;
+    rdf:subject cofoga:052 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0520 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s015
+    a rdf:Statement ;
+    rdf:subject cofoga:1051 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:1060 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s016
+    a rdf:Statement ;
+    rdf:subject cofoga:045 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:046 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s017
+    a rdf:Statement ;
+    rdf:subject cofoga:0221 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0230 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s018
+    a rdf:Statement ;
+    rdf:subject cofoga:052 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:052 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s019
+    a rdf:Statement ;
+    rdf:subject cofoga:084 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:084 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s020
+    a rdf:Statement ;
+    rdf:subject cofoga:011 ;
+    rdf:predicate skos:exactMAtch ;
+    rdf:object cofog:011 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s021
+    a rdf:Statement ;
+    rdf:subject cofoga:073 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:073 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s022
+    a rdf:Statement ;
+    rdf:subject cofoga:08 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:08 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s023
+    a rdf:Statement ;
+    rdf:subject cofoga:0411 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0411 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s024
+    a rdf:Statement ;
+    rdf:subject cofoga:0434 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0434 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s025
+    a rdf:Statement ;
+    rdf:subject cofoga:045 ;
+    rdf:predicate skos:narrowerMatch ;
+    rdf:object cofog:0486 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s026
+    a rdf:Statement ;
+    rdf:subject cofoga:094 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0950 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s027
+    a rdf:Statement ;
+    rdf:subject cofoga:0531 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0530 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s028
+    a rdf:Statement ;
+    rdf:subject cofoga:02 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:02 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s029
+    a rdf:Statement ;
+    rdf:subject cofoga:102 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:1030 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s030
+    a rdf:Statement ;
+    rdf:subject cofoga:09 ;
+    rdf:predicate skos:narrowerMatch ;
+    rdf:object cofog:0970 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s031
+    a rdf:Statement ;
+    rdf:subject cofoga:11 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:045 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s032
+    a rdf:Statement ;
+    rdf:subject cofoga:08 ;
+    rdf:predicate skos:narrowerMatch ;
+    rdf:object cofog:085 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s033
+    a rdf:Statement ;
+    rdf:subject cofoga:1041 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:1050 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s034
+    a rdf:Statement ;
+    rdf:subject cofoga:053 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:053 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s035
+    a rdf:Statement ;
+    rdf:subject cofoga:0441 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0441 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s036
+    a rdf:Statement ;
+    rdf:subject cofoga:0461 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0471 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s037
+    a rdf:Statement ;
+    rdf:subject cofoga:095 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:096 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s038
+    a rdf:Statement ;
+    rdf:subject cofoga:0341 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0340 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s039
+    a rdf:Statement ;
+    rdf:subject cofoga:0423 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0423 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s040
+    a rdf:Statement ;
+    rdf:subject cofoga:1021 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:103 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s041
+    a rdf:Statement ;
+    rdf:subject cofoga:04 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:04 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s042
+    a rdf:Statement ;
+    rdf:subject cofoga:081 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:081 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s043
+    a rdf:Statement ;
+    rdf:subject cofoga:09 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:09 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s044
+    a rdf:Statement ;
+    rdf:subject cofoga:0723 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0723 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s045
+    a rdf:Statement ;
+    rdf:subject cofoga:0724 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0724 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s046
+    a rdf:Statement ;
+    rdf:subject cofoga:104 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:105 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s047
+    a rdf:Statement ;
+    rdf:subject cofoga:09 ;
+    rdf:predicate skos:narrowerMatch ;
+    rdf:object cofog:097 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s048
+    a rdf:Statement ;
+    rdf:subject cofoga:014 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:014 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s049
+    a rdf:Statement ;
+    rdf:subject cofoga:064 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:064 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s050
+    a rdf:Statement ;
+    rdf:subject cofoga:0121 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0121 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s051
+    a rdf:Statement ;
+    rdf:subject cofoga:0111 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0111 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s052
+    a rdf:Statement ;
+    rdf:subject cofoga:046 ;
+    rdf:predicate skos:narrowerMatch ;
+    rdf:object cofog:0487 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s053
+    a rdf:Statement ;
+    rdf:subject cofoga:1011 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:1020 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s054
+    a rdf:Statement ;
+    rdf:subject cofoga:0731 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0731 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s055
+    a rdf:Statement ;
+    rdf:subject cofoga:0311 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0310 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s056
+    a rdf:Statement ;
+    rdf:subject cofoga:0421 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0421 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s057
+    a rdf:Statement ;
+    rdf:subject cofoga:105 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:106 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s058
+    a rdf:Statement ;
+    rdf:subject cofoga:0171 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0180 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s059
+    a rdf:Statement ;
+    rdf:subject cofoga:04 ;
+    rdf:predicate skos:narrowerMatch ;
+    rdf:object cofog:048 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s060
+    a rdf:Statement ;
+    rdf:subject cofoga:0733 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0733 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s061
+    a rdf:Statement ;
+    rdf:subject cofoga:114 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0453 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s062
+    a rdf:Statement ;
+    rdf:subject cofoga:0711 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0711 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s063
+    a rdf:Statement ;
+    rdf:subject cofoga:0451 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0460 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s064
+    a rdf:Statement ;
+    rdf:subject cofoga:102 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:103 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s065
+    a rdf:Statement ;
+    rdf:subject cofoga:062 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:062 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s066
+    a rdf:Statement ;
+    rdf:subject cofoga:061 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:061 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s067
+    a rdf:Statement ;
+    rdf:subject cofoga:0431 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0431 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s068
+    a rdf:Statement ;
+    rdf:subject cofoga:03 ;
+    rdf:predicate skos:exactMAtch ;
+    rdf:object cofog:03 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s069
+    a rdf:Statement ;
+    rdf:subject cofoga:0211 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0210 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s070
+    a rdf:Statement ;
+    rdf:subject cofoga:05 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:05 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s071
+    a rdf:Statement ;
+    rdf:subject cofoga:0841 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0840 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s072
+    a rdf:Statement ;
+    rdf:subject cofoga:042 ;
+    rdf:predicate skos:exactMAtch ;
+    rdf:object cofog:042 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s073
+    a rdf:Statement ;
+    rdf:subject cofoga:0435 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0435 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s074
+    a rdf:Statement ;
+    rdf:subject cofoga:05 ;
+    rdf:predicate skos:narrowerMatch ;
+    rdf:object cofog:0550 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s075
+    a rdf:Statement ;
+    rdf:subject cofoga:103 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:104 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s076
+    a rdf:Statement ;
+    rdf:subject cofoga:0451 ;
+    rdf:predicate skos:narrowerMatch ;
+    rdf:object cofog:0486 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s077
+    a rdf:Statement ;
+    rdf:subject cofoga:095 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0960 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s078
+    a rdf:Statement ;
+    rdf:subject cofoga:033 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:033 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s079
+    a rdf:Statement ;
+    rdf:subject cofoga:113 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0452 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s080
+    a rdf:Statement ;
+    rdf:subject cofoga:0463 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0473 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s081
+    a rdf:Statement ;
+    rdf:subject cofoga:044 ;
+    rdf:predicate skos:narrowerMatch ;
+    rdf:object cofog:0484 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s082
+    a rdf:Statement ;
+    rdf:subject cofoga:0462 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0472 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s083
+    a rdf:Statement ;
+    rdf:subject cofoga:0433 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0433 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s084
+    a rdf:Statement ;
+    rdf:subject cofoga:111 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0451 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s085
+    a rdf:Statement ;
+    rdf:subject cofoga:0322 ;
+    rdf:predicate skos:exactMAtch ;
+    rdf:object cofog:0320 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s086
+    a rdf:Statement ;
+    rdf:subject cofoga:054 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:054 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s087
+    a rdf:Statement ;
+    rdf:subject cofoga:043 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:043 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s088
+    a rdf:Statement ;
+    rdf:subject cofoga:0322 ;
+    rdf:predicate skos:exactMAtch ;
+    rdf:object cofog:032 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s089
+    a rdf:Statement ;
+    rdf:subject cofoga:071 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:071 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s090
+    a rdf:Statement ;
+    rdf:subject cofoga:0722 ;
+    rdf:predicate skos:exactMAtch ;
+    rdf:object cofog:0722 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s091
+    a rdf:Statement ;
+    rdf:subject cofoga:0721 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0721 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s092
+    a rdf:Statement ;
+    rdf:subject cofoga:0541 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0540 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s093
+    a rdf:Statement ;
+    rdf:subject cofoga:0432 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0432 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s094
+    a rdf:Statement ;
+    rdf:subject cofoga:051 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0510 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s095
+    a rdf:Statement ;
+    rdf:subject cofoga:1171 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0455 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s096
+    a rdf:Statement ;
+    rdf:subject cofoga:0211 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:021 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s097
+    a rdf:Statement ;
+    rdf:subject cofoga:016 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:017 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s098
+    a rdf:Statement ;
+    rdf:subject cofoga:0412 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0412 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s099
+    a rdf:Statement ;
+    rdf:subject cofoga:031 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:031 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s100
+    a rdf:Statement ;
+    rdf:subject cofoga:0112 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0112 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s101
+    a rdf:Statement ;
+    rdf:subject cofoga:10 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:10 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s102
+    a rdf:Statement ;
+    rdf:subject cofoga:0132 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0132 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s103
+    a rdf:Statement ;
+    rdf:subject cofoga:0631 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0630 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s104
+    a rdf:Statement ;
+    rdf:subject cofoga:0761 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0740 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s105
+    a rdf:Statement ;
+    rdf:subject cofoga:0611 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0610 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s106
+    a rdf:Statement ;
+    rdf:subject cofoga:0443 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0443 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s107
+    a rdf:Statement ;
+    rdf:subject cofoga:1002 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:1012 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s108
+    a rdf:Statement ;
+    rdf:subject cofoga:012 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:012 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s109
+    a rdf:Statement ;
+    rdf:subject cofoga:082 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:082 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s110
+    a rdf:Statement ;
+    rdf:subject cofoga:10 ;
+    rdf:predicate skos:narrowerMatch ;
+    rdf:object cofog:108 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s111
+    a rdf:Statement ;
+    rdf:subject cofoga:115 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0454 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s112
+    a rdf:Statement ;
+    rdf:subject cofoga:034 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:034 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s113
+    a rdf:Statement ;
+    rdf:subject cofoga:0131 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0131 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s114
+    a rdf:Statement ;
+    rdf:subject cofoga:0442 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0442 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s115
+    a rdf:Statement ;
+    rdf:subject cofoga:062 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0620 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s116
+    a rdf:Statement ;
+    rdf:subject cofoga:0713 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0713 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s117
+    a rdf:Statement ;
+    rdf:subject cofoga:0436 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0436 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s118
+    a rdf:Statement ;
+    rdf:subject cofoga:0734 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0734 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s119
+    a rdf:Statement ;
+    rdf:subject cofoga:083 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0830 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s120
+    a rdf:Statement ;
+    rdf:subject cofoga:083 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:083 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s121
+    a rdf:Statement ;
+    rdf:subject cofoga:1151 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0454 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s122
+    a rdf:Statement ;
+    rdf:subject cofoga:0141 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0140 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s123
+    a rdf:Statement ;
+    rdf:subject cofoga:0422 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0422 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s124
+    a rdf:Statement ;
+    rdf:subject cofoga:06 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:06 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s125
+    a rdf:Statement ;
+    rdf:subject cofoga:1021 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:1030 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s126
+    a rdf:Statement ;
+    rdf:subject cofoga:10 ;
+    rdf:predicate skos:narrowerMatch ;
+    rdf:object cofog:1080 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s127
+    a rdf:Statement ;
+    rdf:subject cofoga:022 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:023 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s128
+    a rdf:Statement ;
+    rdf:subject cofoga:013 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:013 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s129
+    a rdf:Statement ;
+    rdf:subject cofoga:017 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:018 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s130
+    a rdf:Statement ;
+    rdf:subject cofoga:1001 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:1011 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s131
+    a rdf:Statement ;
+    rdf:subject cofoga:0113 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0113 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s132
+    a rdf:Statement ;
+    rdf:subject cofoga:063 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:063 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s133
+    a rdf:Statement ;
+    rdf:subject cofoga:08 ;
+    rdf:predicate skos:narrowerMatch ;
+    rdf:object cofog:0850 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s134
+    a rdf:Statement ;
+    rdf:subject cofoga:091 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:091 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s135
+    a rdf:Statement ;
+    rdf:subject cofoga:082 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0820 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s136
+    a rdf:Statement ;
+    rdf:subject cofoga:093 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:094 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s137
+    a rdf:Statement ;
+    rdf:subject cofoga:0161 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0170 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s138
+    a rdf:Statement ;
+    rdf:subject cofoga:0641 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0640 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s139
+    a rdf:Statement ;
+    rdf:subject cofoga:0212 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0220 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s140
+    a rdf:Statement ;
+    rdf:subject cofoga:046 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:047 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s141
+    a rdf:Statement ;
+    rdf:subject cofoga:11 ;
+    rdf:predicate skos:narrowerMatch ;
+    rdf:object cofog:0454 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s142
+    a rdf:Statement ;
+    rdf:subject cofoga:01 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:01 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s143
+    a rdf:Statement ;
+    rdf:subject cofoga:100 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:101 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s144
+    a rdf:Statement ;
+    rdf:subject cofoga:0732 ;
+    rdf:predicate skos:exactMAtch ;
+    rdf:object cofog:0732 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s145
+    a rdf:Statement ;
+    rdf:subject cofoga:1031 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:1040 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s146
+    a rdf:Statement ;
+    rdf:subject cofoga:094 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:095 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s147
+    a rdf:Statement ;
+    rdf:subject cofoga:0212 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:022 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s148
+    a rdf:Statement ;
+    rdf:subject cofoga:0811 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:0810 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s149
+    a rdf:Statement ;
+    rdf:subject cofoga:0122 ;
+    rdf:predicate skos:exactMAtch ;
+    rdf:object cofog:0122 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
+
+:s150
+    a rdf:Statement ;
+    rdf:subject cofoga:072 ;
+    rdf:predicate skos:exactMatch ;
+    rdf:object cofog:072 ;
+    dct:created "2019-07-01"^^xsd:date ;
+    loci:hadGenerationMethod method: ;
+.
