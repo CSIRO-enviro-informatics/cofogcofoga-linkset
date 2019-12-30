@@ -1,7 +1,7 @@
 # baseURI http://linked.data.gov.au/dataset/cofogcofoga
+# imports: https://data.naa.gov.au/def/cofog
+# imports: http://linked.data.gov.au/def/cofoga
 
-@prefix cofog: <http://linked.data.gov.au/def/cofog/> .
-@prefix cofoga: <http://linked.data.gov.au/def/cofog-a/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix loci: <http://linked.data.gov.au/def/loci#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -17,6 +17,8 @@
 
 <http://linked.data.gov.au/dataset/cofogcofoga>
     a loci:Linkset ;
+    owl:imports <https://data.naa.gov.au/def/cofog> ; 
+    owl:imports <http://linked.data.gov.au/def/cofoga> ;      
     dct:title "COFOG / COROG-A Linkset" ;
     dct:description """This Linkset contains [SKOS mapping properties](https://www.w3.org/TR/skos-reference/#mapping) between Concepts in the [COFOG](http://data.naa.gov.au/def/cofog) and Concepts in the [COFOG-A](http://data.naa.gov.au/def/cofog) vocabularies.
 
